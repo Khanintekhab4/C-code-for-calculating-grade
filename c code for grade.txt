@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    double midterm;
+    double fexam;
+    double a, b, grade;
+    printf("enter the no of midterm and fexam:");
+    scanf("%lf %lf", &midterm, &fexam);
+
+   
+
+grade=(0.40*midterm+0.60*fexam);
+printf("the grade is %lf", grade);
+
+if(grade >=0 && grade<=50)
+    printf("the letter grade is %c", 'F');
+    
+    else if(grade >=50 && grade<=60)
+    printf("the letter grade is %c", 'D');
+    
+    else if(grade >=60 && grade<=70)
+    printf("the letter grade is %c", 'C');
+    
+    else if(grade >=70 && grade<=85)
+    printf("the letter grade is %c", 'B');
+    
+    else 
+    printf("the letter grade is %c", 'A');
+    return 0;
+}
